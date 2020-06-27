@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=0.85,width=device-width" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/index.js"></script>
+    <title>ToDO List</title>
+</head>
+
+<body>
+
+    <div class="todoList">
+        <div class="cover-img" >
+            <div class="cover-inner" id="backgroundimg">
+                <h3>待办</h3>
+            </div>
+        </div>
+        <div class="content">
+            <div class="add">
+                <div class="input-buttons">
+                    <a href="#" class="add-todo" id="add">+</a>
+                </div>
+                <input type="text" name="add" id="context" maxlength="20" placeholder="添加内容">
+                <input type="date" name="ddl" id="ddl">
+
+            </div>
+            <hr />
+            <ul class="todos" id="list">
+                <!-- 模板 -->
+                <!-- <li>
+                    <input type="checkbox">
+                    <label class="msg_single">
+                        <span class="check"></span>
+                         <span class="msg">做作业</span>
+                    </label>
+                    <a class="delete" id="del"></a>
+                    <a class="edit" id="edit"></a>
+                    <label class="date" id="date">2020-6-26</label>
+                </li> -->
+            </ul>
+        </div>
+        <div class="filter">
+            <a class="all selected" id="all">全部事项</a>
+            <a class="finished" id="finished">已完成</a>
+            <a class="unfinished" id="unfinished">待完成</a>
+            <a class="finishall" id="finishall">全部完成</a>
+            <a class="clearfinished" id="clearfinished">清除已完成</a>
+        </div>
+    </div>
+</body>
+
+</html>
